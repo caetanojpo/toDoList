@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(220, 230, 233);
+  --primary-color-darker: rgb(86, 89, 90);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;  
+  color:black;
+}
+
+.container {
+  max-width: 960px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom:0px;
+  transition:0.5s;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  justify-content:end;
+  height:30px;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon::before {
+  content: "\f186";
+  font-family: fontAwesome;
+  font-size:26px;
+  color: rgb(0, 153, 255);
+
+}
+
+.identidadeYours{
+  display: flex;
+  text-align: center;
+
+}
+
+.img-organizer {
+  max-width: 50%
+}
+
+.identidadeYours-textos{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: black;
+}
+
+.title-organizer{
+  font-size: 48px;
+}
+
+.title-organizer-y{
+  color: rgba(152, 64, 235);
+}
+.subtitle-organizer {
+  text-align: left;
+  font-size: 24px;
+  margin-left: 30px;
+}
+
+.listaYours {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  box-shadow: 0px 3px 5px 1px #9B99AA;
+}
+
+.listaYours-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-lista {
+  background-color: rgba(206, 199, 199, 0.418);
+  color: rgb(152, 64, 235);
+  font-size: 32px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  margin: 0px;
+  padding: 15px
+}
+
+.txt {
+ margin: 20px;
+ margin-right:0px;
+ width: 80%;
+}
+
+.btn-add-tarefa {
+  background-color:white;
+  color: rgb(152, 64, 235);
+  border: 1px solid rgb(152, 64, 235);
+  border-radius: 5px;
+  width: 15%;
+  height: 30px;
+  margin: 20px;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+.btn-add-tarefa:hover {
+  background-color:rgb(152, 64, 235);
+  color:#fff;
+}
+
+
+.aFazer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  margin: 20px;
+  line-height: 20px
+}
+
+.aFazer-txt {
+  background-color: rgba(206, 199, 199, 0.418);
+  color: rgb(152, 64, 235);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  margin: 0px;
+  padding: 15px
+  
+}
+
+.tarefas {
+    margin: 20px;
+}
+
+.tarefas li {
+  list-style-type: circle;
+  
+}
+
+.apagar {
+  background-color: white;
+  border: 1px solid rgb(152, 64, 235);
+  color: rgb(152, 64, 235);
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  width: 60px;
+  height: 30px;
+  margin: 10px;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+
+.apagar:hover {
+  border: 1px solid rgb(152, 64, 235);
+  background-color:rgb(152, 64, 235);
+  color: white;
+   
+}
+
+footer {
+  color: rgb(152, 64, 235);
+  margin: 50px auto;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  
+  
+}
+
+.footer-txt{
+  line-height:0px;
+}
+
+footer img {
+  margin-left: 20px;
+  width: 30px;
+  
+}
+
+/*DARK MODE*/
+.container.dark {
+  max-width: 960px;
+  margin: 50px auto;
+  background: rgb(56, 53, 53);
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom:0px;
+  color:white;
+}
+
+.body.dark {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color-darker);
+  font-family: 'Open sans', sans-serif;  
+  color:white;
+}
+
+.container.dark .header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  justify-content:end;
+  height:30px;
+}
+
+
+
+.container.dark .header .icon::before {
+  content: "\f185";
+  font-family: fontAwesome;
+  font-size:26px;
+  color: rgb(251, 255, 7);
+
+}
+
+.container.dark  .identidadeYours-textos{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: white;
+}
+
+.container.dark .listaYours{
+  border: 1px solid rgba(152, 64, 235, 0.589);
+  border-radius: 5px;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  box-shadow: 0px 3px 5px 1px rgba(152, 64, 235, 0.637);
+}
+
+.container.dark .title-lista{
+  background-color: rgb(152, 64, 235);
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  margin: 0px;
+  padding: 15px
+}
+
+.container.dark .btn-add-tarefa {
+  background-color:rgb(152, 64, 235);
+  color: white;
+  border: 1px solid rgb(152, 64, 235);
+  border-radius: 5px;
+  width: 15%;
+  height: 30px;
+  margin: 20px;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+.container.dark .btn-add-tarefa:hover {
+  background-color:white;
+  color:rgb(152, 64, 235);
+  border: 1px solid white;
+}
+
+.container.dark .apagar {
+  background-color: rgb(152, 64, 235);
+  border: 1px solid rgb(152, 64, 235);
+  color: white;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  width: 10%;
+  height: 30px;
+  margin: 10px;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+.container.dark .apagar:hover {
+  border: 1px solid white;
+  background-color:white;
+  color: rgb(152, 64, 235);
+   
+}
+
+
+.container.dark .tarefas li {
+  list-style-type: circle;
+  color: white;
+}
+
+.container.dark .aFazer-txt {
+  background-color: rgb(152, 64, 235);
+  color: White;
+  border-bottom: 1px solid rgb(152, 64, 235);
+  margin: 0px;
+  padding: 15px
+}
+
+.container.dark .aFazer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(152, 64, 235);
+  border-radius: 5px;
+  margin: 20px;
+  line-height: 20px
+}

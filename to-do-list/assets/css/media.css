@@ -1,0 +1,30 @@
+@media screen and (max-width: 574px) {
+    .img-organizer {
+    display:none;
+ }
+    
+}
+
+@media screen and (max-width: 760px){
+    .img-organizer {
+        display:none;
+     }
+    
+     .identidadeYours-textos {
+        margin: 0 auto;
+        padding-bottom: 20px;
+     }
+
+     .btn-add-tarefa {
+        font-size: 12px
+     }
+     
+     .apagar {
+        font-size: 12px
+     }
+
+}
+
+@media screen and (max-width: 1300px) {
+ 
+}
